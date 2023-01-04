@@ -1,0 +1,15 @@
+.result-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 697px;
+  font-size: 13vw;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  .result-page {
+    font-size: 115px;
+  }
+}

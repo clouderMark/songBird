@@ -1,0 +1,33 @@
+.page-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: rgb(60, 63, 66);
+  height: 74px;
+  font-size: 11px;
+
+  &__git {
+    width: 40px;
+    height: 40px;
+    margin-right: 3%;
+    background-image: url("@/images/Octicons-mark-github.svg");
+    background-size: contain;
+  }
+
+  &__produced {
+    height: 40px;
+    padding-top: 20px;
+  }
+
+  &__course {
+    width: 80px;
+    height: 50px;
+    margin-left: auto;
+    background-image: url("@/images/rs_school_js.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

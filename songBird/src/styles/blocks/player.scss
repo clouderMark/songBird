@@ -1,0 +1,151 @@
+.progress {
+  width: 0px;
+  height: 7px;
+  border-radius: 3px;
+  background: rgb(253, 231,76);
+  
+  &__container {
+    height: 7px;
+    border-radius: 3px;
+    background: rgb(117,142,79);
+    margin-bottom: 30px;
+  }
+}
+
+
+.volume-range {
+  width: 0px;
+  height: 7px;
+  background: rgb(253, 231,76);
+  border-radius: 3px;
+
+  &__container {
+    // width: 150px;
+    width: 30%;
+    height: 7px;
+    border-radius: 3px;
+    background: rgb(117,142,79);
+  }
+}
+
+.player {
+  flex-grow: 1;
+  margin-left: auto;
+  // width: 75%; //320
+  margin-right: 2%;
+  margin-left: 3%;
+  // padding-top: 40px;
+  padding-top: 20px;
+  
+  &__wrapper {
+    display: flex;
+    width: 100%; //600
+    height: 155px;
+    background-color: rgb(92, 95, 98);
+  }
+
+  &__play {
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background-color: rgb(242,100,25);
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    margin-right: auto;
+    border-radius: 50%;
+
+    &--start {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        top: 13px;
+        left: 18px;
+        border: 7px solid transparent;
+        border-left: 7px solid white;
+      }
+    }
+
+    &--stop {
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 14px;
+        left: 17px;
+        width: 2px;
+        height: 12px;
+        background-color: white;
+      }
+
+      &::after {
+        left: 22px;
+      }
+    }
+
+    &:hover {
+      background-color: rgb(250, 104, 26);
+    }
+    &:active {
+      background-color: rgb(196, 80, 18);
+    }
+  }
+
+  &__mute {
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background-color: rgb(242,100,25);
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 50%;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 5px;
+      width: 20px;
+      height: 20px;
+      background-image: url("@/images/speaker.svg");
+      background-size: 100%;
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(4deg) brightness(104%) contrast(102%);
+    }
+
+    &--on {
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 4px;
+        width: 22px;
+        height: 1px;
+        background-color: white;
+        transform: rotate(45deg);
+      }
+    }
+
+    &:hover {
+      background-color: rgb(250, 104, 26);
+    }
+    &:active {
+      background-color: rgb(196, 80, 18);
+    }
+  }
+
+  &__time {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(48,54,47);
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+  }
+}

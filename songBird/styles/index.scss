@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2');
+}
+
+// @import 'variables';
+@import './blocks/normalize';
+@import './blocks/border-box';
+@import './blocks/visually-hidden';
+@import './blocks/player';
+@import './blocks/player-img';
+@import './blocks/item-name-gug';
+
+html {
+  background-color: rgb(38, 41, 46);
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: rgb(233, 233, 234);
+  padding-top: 10px;
+  font-family: 'Roboto', 'Aria', serif;
+}
+
+@media (max-width: 1000px) {
+  body {
+    width: 95%;
+  }
+}
+
+@import './blocks/list-style-ul';
+@import './blocks/a';
+@import './blocks/navigation';
+
+
+.header-page {
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+}
+@import './blocks/video';
+@import './blocks/d-flex';
+@import './blocks/menu-container';
+@import './blocks/score';
+@import './blocks/menu-list';
+@import './blocks/variants';
+@import './blocks/result';
+@import './blocks/game';
+@import './blocks/next-btn';
+@import './blocks/page-footer';
+@import './blocks/result-page';
+@import './blocks/try-again-btn';
+
+

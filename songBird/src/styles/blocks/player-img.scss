@@ -1,0 +1,13 @@
+.player-img {
+  display: flex;
+  margin: 1%;
+  // width: 24%;
+  width: 237px;
+  overflow: hidden;
+
+  &__img {
+    // object-position: right center;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+}

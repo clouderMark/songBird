@@ -1,0 +1,10 @@
+.game {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 540px) {
+  .game {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,23 @@
+.next-btn {
+  cursor: pointer;
+  height: 42px;
+  width: 100%;
+  margin-top: 40px;
+  border: none;
+  color: inherit;
+
+  background-color: rgb(92, 95, 98);
+  
+  &:hover {
+    background-color: rgb(60, 63, 66);
+  }
+
+  &:active {
+    background: rgb(157, 159, 161);
+  }
+
+  &:disabled {
+    cursor: auto;
+    background-color: rgb(45, 48, 54);
+  }
+}

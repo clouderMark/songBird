@@ -1,0 +1,25 @@
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 20px;
+  margin-bottom: 40px;
+
+  &__item {
+    flex-grow: 1;
+    min-width: 130px;
+  }
+
+  &__link {
+    cursor: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(60, 63, 66);
+    min-height: 40px;
+
+    &--active {
+      background-color: rgb(92, 95, 98);
+    }
+  }
+}

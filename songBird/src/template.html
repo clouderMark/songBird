@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+  <header class="header-page">
+    <a href="#">
+      <img id="logo" width="200px" alt="">
+    </a>
+    <nav class="navigation">
+      <ul class="navigation__list" id="navList">
+        <li class="navigation__item">
+          <label class="navigation__link">
+            <input checked class="visually-hidden" type="radio" value="main" name="nav">
+            <span>Главная</span>
+          </label>
+        </li>
+        <li class="navigation__item">
+          <label class="navigation__link">
+            <input class="visually-hidden" type="radio" value="play" name="nav">
+            <span>Играть</span>
+          </label>
+        </li>
+        <li class="navigation__item">
+          <label class="navigation__link">
+            <input class="visually-hidden" type="radio" value="results" name="nav">
+            <span>Результаты</span>
+          </label>
+        </li>
+      </ul>
+      <button class="navigation__button navigation__button--closed" id="openNav">Open menu</button>
+    </nav>
+  </header>
+  <div id="root"></div>
+  <footer class="page-footer">
+    <a class="page-footer__git" href="https://github.com/clouderMark"></a>
+    <span class="page-footer__produced">produced 2022</span>
+    <a class="page-footer__course" href="https://rs.school/js/"></a>
+  </footer>
+</body>
+
+</html>
